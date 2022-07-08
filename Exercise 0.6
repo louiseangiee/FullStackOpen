@@ -1,0 +1,11 @@
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+//Note: POST request to the address new_note_spa contains the new note as JSON-data containing both the content of the note (content) and the timestamp (date)
+
+server->201 created
+
+event handler -> new note
+
+event handler -> adds new note to the notes list: notes.push(note)
+
+event handler->server:(HTTP POST Request) new note sent as JSON string
